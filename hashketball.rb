@@ -235,48 +235,11 @@ def player_stats(player_name)
   stats
     
 end
-binding.pry
-#___________________________________________________________________
-#Player Stats WORKS**
 
-def player_stats_works(player_name)
-  if
-    player_name == game_hash[:home][:players][0][:player_name]  
-    game_hash[:home][:players][0]
-  elsif
-    player_name == game_hash[:home][:players][1][:player_name]  
-    game_hash[:home][:players][1]
-  elsif
-    player_name == game_hash[:home][:players][2][:player_name]  
-    game_hash[:home][:players][2]
-  elsif 
-    player_name == game_hash[:home][:players][3][:player_name]  
-    game_hash[:home][:players][3]
-  elsif
-    player_name == game_hash[:home][:players][4][:player_name]  
-    game_hash[:home][:players][4]
-  elsif
-    player_name == game_hash[:away][:players][0][:player_name]  
-    game_hash[:away][:players][0]
-  elsif 
-    player_name == game_hash[:away][:players][1][:player_name]  
-    game_hash[:away][:players][1]
-  elsif
-    player_name == game_hash[:away][:players][2][:player_name]  
-    game_hash[:away][:players][2]
-  elsif 
-    player_name == game_hash[:away][:players][3][:player_name]  
-    game_hash[:away][:players][3]
-  elsif 
-    player_name == game_hash[:away][:players][4][:player_name]  
-    game_hash[:away][:players][4]
-  end    
-end 
-binding.pry
 #________________________________________________________________
 #Big shoe rebounds helpers
 
-def all_players_stats
+def all_players_stats_rebounds
   
   all_players = game_hash[:home][:players] + game_hash[:away][:players]
   shoe_size = all_players[0..9].map { |i| {i[:shoe] => i[:rebounds]}}
@@ -291,7 +254,7 @@ def big_shoe_rebounds
   biggest_shoe = 0 
   rebounds = 0
   
-  all_players_stats.each do |stat_hash| 
+  all_players_stats_rebounds.each do |stat_hash| 
 
     current_shoe_size = stat_hash.keys.first
     current_rebounds = stat_hash.values.first
