@@ -236,43 +236,6 @@ def player_stats(player_name)
     
 end
 
-#___________________________________________________________________
-#Player Stats WORKS**
-
-def player_stats_works(player_name)
-  if
-    player_name == game_hash[:home][:players][0][:player_name]  
-    game_hash[:home][:players][0]
-  elsif
-    player_name == game_hash[:home][:players][1][:player_name]  
-    game_hash[:home][:players][1]
-  elsif
-    player_name == game_hash[:home][:players][2][:player_name]  
-    game_hash[:home][:players][2]
-  elsif 
-    player_name == game_hash[:home][:players][3][:player_name]  
-    game_hash[:home][:players][3]
-  elsif
-    player_name == game_hash[:home][:players][4][:player_name]  
-    game_hash[:home][:players][4]
-  elsif
-    player_name == game_hash[:away][:players][0][:player_name]  
-    game_hash[:away][:players][0]
-  elsif 
-    player_name == game_hash[:away][:players][1][:player_name]  
-    game_hash[:away][:players][1]
-  elsif
-    player_name == game_hash[:away][:players][2][:player_name]  
-    game_hash[:away][:players][2]
-  elsif 
-    player_name == game_hash[:away][:players][3][:player_name]  
-    game_hash[:away][:players][3]
-  elsif 
-    player_name == game_hash[:away][:players][4][:player_name]  
-    game_hash[:away][:players][4]
-  end    
-end 
-#binding.pry
 #________________________________________________________________
 #Big shoe rebounds helpers
 
