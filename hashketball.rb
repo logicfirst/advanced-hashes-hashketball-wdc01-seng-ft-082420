@@ -235,7 +235,7 @@ def player_stats(player_name)
   stats
     
 end
-binding.pry
+#binding.pry
 #___________________________________________________________________
 #Player Stats WORKS**
 
@@ -272,7 +272,7 @@ def player_stats_works(player_name)
     game_hash[:away][:players][4]
   end    
 end 
-binding.pry
+#binding.pry
 #________________________________________________________________
 #Big shoe rebounds helpers
 
