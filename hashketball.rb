@@ -276,7 +276,7 @@ end
 #________________________________________________________________
 #Big shoe rebounds helpers
 
-#def all_players_stats
+#def all_players_stats_rebounds
   
  # all_players = game_hash[:home][:players] + game_hash[:away][:players]
   #shoe_size = all_players[0..9].map { |i| {i[:shoe] => i[:rebounds]}}
@@ -291,7 +291,7 @@ def big_shoe_rebounds
   biggest_shoe = 0 
   rebounds = 0
   
-  all_players_stats.each do |stat_hash| 
+  all_players_stats_rebounds.each do |stat_hash| 
 
     current_shoe_size = stat_hash.keys.first
     current_rebounds = stat_hash.values.first
