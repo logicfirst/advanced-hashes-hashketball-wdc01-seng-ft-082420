@@ -226,7 +226,6 @@ end
 def player_stats(player_name)
   stats = {}
   all_players_stats.each do |stat_hash| 
-binding.pry
     if
       player_name == stat_hash.values.first
       
@@ -282,7 +281,7 @@ end
  # all_players = game_hash[:home][:players] + game_hash[:away][:players]
   #shoe_size = all_players[0..9].map { |i| {i[:shoe] => i[:rebounds]}}
   
-end 
+#end 
 
 
 #________________________________________________________________
