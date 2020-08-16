@@ -276,12 +276,12 @@ end
 #________________________________________________________________
 #Big shoe rebounds helpers
 
-#def all_players_stats_rebounds
+def all_players_stats_rebounds
   
- # all_players = game_hash[:home][:players] + game_hash[:away][:players]
-  #shoe_size = all_players[0..9].map { |i| {i[:shoe] => i[:rebounds]}}
+  all_players = game_hash[:home][:players] + game_hash[:away][:players]
+  shoe_size = all_players[0..9].map { |i| {i[:shoe] => i[:rebounds]}}
   
-#end 
+end 
 
 
 #________________________________________________________________
