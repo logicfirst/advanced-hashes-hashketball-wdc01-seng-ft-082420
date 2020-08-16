@@ -226,6 +226,7 @@ end
 def player_stats(player_name)
   stats = {}
   all_players_stats.each do |stat_hash| 
+binding.pry
     if
       player_name == stat_hash.values.first
       
@@ -235,7 +236,7 @@ def player_stats(player_name)
   stats
     
 end
-#binding.pry
+
 #___________________________________________________________________
 #Player Stats WORKS**
 
